@@ -1,0 +1,30 @@
+variavel_transformada,importancia,variavel_original,nome_amigavel
+status_pagamento_set,0.189141880350798,status_pagamento_set,Status de pagamento — setembro
+status_pagamento_ago,0.08636085660336673,status_pagamento_ago,Status de pagamento — agosto
+valor_pagamento_set,0.05338348395052584,valor_pagamento_set,Valor pago — setembro
+status_pagamento_jul,0.050636093439464104,status_pagamento_jul,Status de pagamento — julho
+limite_credito,0.04944889959729983,limite_credito,Limite de crédito
+valor_fatura_set,0.04819575251357488,valor_fatura_set,Valor da fatura — setembro
+status_pagamento_jun,0.04465597705642656,status_pagamento_jun,Status de pagamento — junho
+valor_pagamento_ago,0.04434835845984533,valor_pagamento_ago,Valor pago — agosto
+valor_pagamento_jul,0.0420920509241029,valor_pagamento_jul,Valor pago — julho
+valor_fatura_ago,0.03804282087276085,valor_fatura_ago,Valor da fatura — agosto
+valor_pagamento_jun,0.03693462898517285,valor_pagamento_jun,Valor pago — junho
+valor_pagamento_abr,0.03548406574726496,valor_pagamento_abr,Valor pago — abril
+status_pagamento_mai,0.03469013676387458,status_pagamento_mai,Status de pagamento — maio
+valor_fatura_jul,0.03401433261751109,valor_fatura_jul,Valor da fatura — julho
+valor_fatura_jun,0.03307144282339042,valor_fatura_jun,Valor da fatura — junho
+valor_fatura_mai,0.03275948973017615,valor_fatura_mai,Valor da fatura — maio
+valor_fatura_abr,0.03171877072505541,valor_fatura_abr,Valor da fatura — abril
+valor_pagamento_mai,0.03056246259018078,valor_pagamento_mai,Valor pago — maio
+idade,0.028878050009944048,idade,Idade
+status_pagamento_abr,0.022498140143571613,status_pagamento_abr,Status de pagamento — abril
+escolaridade_2,0.005488151290394321,escolaridade,Escolaridade
+sexo_2,0.004899617860233827,sexo,Sexo
+escolaridade_1,0.004868565843261164,escolaridade,Escolaridade
+estado_civil_1,0.004809557123272622,estado_civil,Estado civil
+estado_civil_2,0.004592919866793207,estado_civil,Estado civil
+sexo_1,0.004554309397919653,sexo,Sexo
+escolaridade_3,0.0027298873359648504,escolaridade,Escolaridade
+escolaridade_4,0.0009928145787214274,escolaridade,Escolaridade
+estado_civil_3,0.00014648279913208852,estado_civil,Estado civil

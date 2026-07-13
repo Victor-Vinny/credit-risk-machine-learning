@@ -1,0 +1,12 @@
+{
+    "threshold_recomendado": 0.36,
+    "recall_minimo": 0.7,
+    "criterio": "Maior precisão entre os thresholds com recall mínimo de 70%.",
+    "metricas_validacao": {
+        "precisao": 0.4039792387543253,
+        "recall": 0.7043740573152338,
+        "f1_score": 0.5134689389774602,
+        "falsos_positivos": 1378,
+        "falsos_negativos": 392
+    }
+}

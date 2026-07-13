@@ -1,0 +1,26 @@
+{
+    "variaveis_removidas": [
+        "sexo",
+        "escolaridade",
+        "estado_civil"
+    ],
+    "modelo_completo": {
+        "threshold": 0.36,
+        "roc_auc": 0.7738807279764439,
+        "pr_auc": 0.5537266281663566,
+        "recall": 0.7066365007541479,
+        "precisao": 0.38751033912324234
+    },
+    "modelo_reduzido": {
+        "threshold": 0.36,
+        "criterio_threshold": "Maior precisão entre os thresholds com recall mínimo de 70%.",
+        "roc_auc": 0.7717635553504419,
+        "pr_auc": 0.5513480835897239,
+        "recall": 0.6990950226244343,
+        "precisao": 0.38337468982630274
+    },
+    "diferenca_pr_auc": -0.0023785445766327795,
+    "diferenca_roc_auc": -0.002117172626001973,
+    "diferenca_recall": -0.007541478129713508,
+    "diferenca_precisao": -0.004135649296939603
+}

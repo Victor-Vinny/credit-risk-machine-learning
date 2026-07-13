@@ -1,0 +1,24 @@
+posicao,variavel_original,nome_amigavel,importancia,percentual_importancia
+1,status_pagamento_set,Status de pagamento — setembro,0.189141880350798,0.189141880350798
+2,status_pagamento_ago,Status de pagamento — agosto,0.08636085660336673,0.08636085660336673
+3,valor_pagamento_set,Valor pago — setembro,0.05338348395052584,0.05338348395052584
+4,status_pagamento_jul,Status de pagamento — julho,0.050636093439464104,0.050636093439464104
+5,limite_credito,Limite de crédito,0.04944889959729983,0.04944889959729983
+6,valor_fatura_set,Valor da fatura — setembro,0.04819575251357488,0.04819575251357488
+7,status_pagamento_jun,Status de pagamento — junho,0.04465597705642656,0.04465597705642656
+8,valor_pagamento_ago,Valor pago — agosto,0.04434835845984533,0.04434835845984533
+9,valor_pagamento_jul,Valor pago — julho,0.0420920509241029,0.0420920509241029
+10,valor_fatura_ago,Valor da fatura — agosto,0.03804282087276085,0.03804282087276085
+11,valor_pagamento_jun,Valor pago — junho,0.03693462898517285,0.03693462898517285
+12,valor_pagamento_abr,Valor pago — abril,0.03548406574726496,0.03548406574726496
+13,status_pagamento_mai,Status de pagamento — maio,0.03469013676387458,0.03469013676387458
+14,valor_fatura_jul,Valor da fatura — julho,0.03401433261751109,0.03401433261751109
+15,valor_fatura_jun,Valor da fatura — junho,0.03307144282339042,0.03307144282339042
+16,valor_fatura_mai,Valor da fatura — maio,0.03275948973017615,0.03275948973017615
+17,valor_fatura_abr,Valor da fatura — abril,0.03171877072505541,0.03171877072505541
+18,valor_pagamento_mai,Valor pago — maio,0.03056246259018078,0.03056246259018078
+19,idade,Idade,0.028878050009944048,0.028878050009944048
+20,status_pagamento_abr,Status de pagamento — abril,0.022498140143571613,0.022498140143571613
+21,escolaridade,Escolaridade,0.014079419048341762,0.014079419048341762
+22,estado_civil,Estado civil,0.009548959789197918,0.009548959789197918
+23,sexo,Sexo,0.00945392725815348,0.00945392725815348

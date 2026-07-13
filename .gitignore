@@ -1,0 +1,42 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache e configurações locais
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+~$*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Distribuição e build
+build/
+dist/
+*.egg-info/
