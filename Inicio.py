@@ -13,7 +13,7 @@ import streamlit as st
 # ============================================================
 
 st.set_page_config(
-    page_title="Credit Risk",
+    page_title="Credit Risk Score",
     page_icon="💳",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -935,17 +935,17 @@ with st.sidebar:
 html(
     """
     <div class="badge">
-        ● Machine Learning aplicado a crédito
+        ● Machine Learning aplicado ao risco comportamental
     </div>
 
     <h1 class="title">
-        💳 Credit Risk
+        💳 Credit Risk Score
     </h1>
 
     <p class="subtitle">
-        Escolha um cenário pronto ou personalize o perfil
-        financeiro para estimar a probabilidade de
-        inadimplência.
+        Analise o comportamento financeiro recente de clientes
+        que já possuem crédito e estime a probabilidade de
+        inadimplência no mês seguinte.
     </p>
     """
 )

@@ -1,4 +1,4 @@
-# Behavioral Credit Score — Machine Learning
+# Credit Risk Score — Machine Learning
 
 Aplicação de Ciência de Dados desenvolvida em Python para estimar o risco de um cliente de cartão de crédito ficar inadimplente no mês seguinte, utilizando seu comportamento financeiro dos últimos seis meses.
 
