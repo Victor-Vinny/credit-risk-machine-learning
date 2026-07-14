@@ -14,9 +14,49 @@ A aplicação está disponível em:
 
 ---
 
+## Interface da aplicação
+
+### Página inicial
+
+A página principal permite escolher cenários prontos ou preencher manualmente o histórico financeiro do cliente.
+
+![Página inicial do Credit Risk Score](images/01_inicio.png)
+
+### Resultado da análise de risco
+
+O sistema apresenta a probabilidade estimada de inadimplência, o score ilustrativo, a classificação operacional e os principais indicadores comportamentais.
+
+![Resultado da análise de alto risco](images/02_resultado_alto_risco.png)
+
+### Desempenho do modelo
+
+A página apresenta as métricas obtidas na base de teste isolada, incluindo recall, precisão, PR AUC, ROC AUC e threshold.
+
+![Desempenho do modelo](images/03_desempenho_modelo.png)
+
+### Comparação dos algoritmos
+
+Foram comparados Regressão Logística, Random Forest e HistGradientBoosting. O Random Forest foi selecionado por apresentar o melhor PR AUC na validação.
+
+![Comparação dos algoritmos](images/03b_comparacao_algoritmos.png)
+
+### Análise exploratória dos dados
+
+A aplicação compara o comportamento de clientes adimplentes e inadimplentes, incluindo atrasos, pagamentos, faturas, limite de crédito e utilização do limite.
+
+![Análise exploratória dos dados](images/04_analise_dos_dados.png)
+
+### Equidade e IA responsável
+
+A página compara o modelo completo com o modelo reduzido e analisa diferenças de desempenho entre grupos.
+
+![Equidade e IA responsável](images/05_equidade_ia_responsavel.png)
+
+---
+
 ## Sobre o projeto
 
-Este projeto implementa um **Behavioral Credit Score**, também chamado de modelo comportamental de risco de crédito.
+Este projeto implementa um modelo comportamental de risco de crédito, também conhecido como **Behavioral Credit Score**.
 
 Diferentemente de um modelo utilizado em uma primeira solicitação de crédito, este sistema analisa clientes que já possuem cartão ou limite disponível.
 
@@ -30,7 +70,7 @@ O modelo utiliza informações como:
 - idade;
 - comportamento financeiro dos últimos seis meses.
 
-Com base nesses dados, o sistema estima a possibilidade de o cliente ficar inadimplente no mês seguinte.
+Com base nesses dados, o sistema estima a probabilidade de o cliente ficar inadimplente no mês seguinte.
 
 ### Possíveis aplicações de negócio
 
@@ -78,9 +118,9 @@ Esse algoritmo combina diversas árvores de decisão. Cada árvore produz uma pr
 Entre suas vantagens para este projeto estão:
 
 - capacidade de capturar relações não lineares;
-- interação entre diferentes variáveis;
+- identificação de interações entre variáveis;
 - pouca necessidade de transformação de escala;
-- funcionamento com variáveis financeiras e comportamentais;
+- funcionamento adequado com variáveis financeiras e comportamentais;
 - possibilidade de calcular importância global das variáveis.
 
 ---
@@ -92,7 +132,7 @@ O objetivo do projeto é demonstrar a construção de uma solução de Machine L
 Além da previsão, o projeto busca responder às seguintes perguntas:
 
 - Qual algoritmo apresenta melhor capacidade de identificar inadimplentes?
-- Qual threshold oferece um equilíbrio adequado entre recall e precisão?
+- Qual threshold oferece equilíbrio adequado entre recall e precisão?
 - Quais variáveis são mais utilizadas pelo modelo?
 - Quanto de desempenho é perdido ao remover variáveis demográficas?
 - O modelo apresenta resultados diferentes entre grupos?
@@ -208,7 +248,7 @@ A divisão foi realizada de forma estratificada para preservar aproximadamente a
 
 A base de teste permaneceu isolada durante as decisões de desenvolvimento.
 
-### 3. Treinamento
+### 3. Treinamento dos algoritmos
 
 Foram treinados:
 
@@ -233,9 +273,11 @@ O modelo produz uma estimativa contínua de risco entre 0 e 1.
 O threshold transforma essa estimativa em uma classificação:
 
 ```text
-Probabilidade abaixo do threshold → não classificado como alto risco
+Probabilidade abaixo do threshold:
+cliente não classificado como alto risco.
 
-Probabilidade igual ou acima do threshold → classificado como alto risco
+Probabilidade igual ou superior ao threshold:
+cliente classificado como alto risco.
 ```
 
 O threshold foi escolhido na base de validação, buscando:
@@ -545,6 +587,14 @@ CREDIT RISK
 │       ├── credit_default_uci_raw.csv
 │       └── uci_variables.csv
 │
+├── images
+│   ├── 01_inicio.png
+│   ├── 02_resultado_alto_risco.png
+│   ├── 03_desempenho_modelo.png
+│   ├── 03b_comparacao_algoritmos.png
+│   ├── 04_analise_dos_dados.png
+│   └── 05_equidade_ia_responsavel.png
+│
 ├── models
 │   ├── credit_risk_real_model.joblib
 │   └── credit_risk_reduced_model.joblib
@@ -588,7 +638,7 @@ CREDIT RISK
 ### 1. Clonar o repositório
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/VictorVInny/credit-risk-machine-learning.git
 cd credit-risk-machine-learning
 ```
 
@@ -704,7 +754,7 @@ No broken requirements found.
 - A base não representa necessariamente o mercado atual.
 - Os resultados não foram validados para o mercado brasileiro.
 - O modelo não considera variáveis macroeconômicas.
-- O Random Forest não possui probabilidades calibradas.
+- As probabilidades não passaram por uma etapa específica de calibração.
 - O score exibido não corresponde a um score oficial.
 - A aplicação não calcula juros ou parcelas.
 - A aplicação não recomenda um valor de limite.
