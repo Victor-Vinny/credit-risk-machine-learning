@@ -638,7 +638,7 @@ CREDIT RISK
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/VictorVInny/credit-risk-machine-learning.git
+git clone https://github.com/Victor-Vinny/credit-risk-machine-learning.git
 cd credit-risk-machine-learning
 ```
 
@@ -828,4 +828,4 @@ Uma aplicação real exigiria validação estatística, temporal, jurídica, reg
 
 **Victor Vinny Braz**
 
-GitHub: [@VictorVInny](https://github.com/VictorVInny)
+GitHub: [@Victor-Vinny](https://github.com/Victor-Vinny)
